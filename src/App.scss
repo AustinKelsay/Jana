@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  margin: 4% auto;
+}
+
+.top-windows {
+  width: 70%;
+  margin: 0% auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-windows {
+  width: 70%;
+  margin: 0% auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.window {
+  margin: 1% auto;
+}
+
