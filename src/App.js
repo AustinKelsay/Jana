@@ -1,31 +1,54 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
-import './App.scss';
+import Styled from "styled-components";
+
+const Header = Styled.h1`
+  width: 100%;
+  margin: 4% auto;
+`
+
+const TopWindows = Styled.div`
+  width: 70%;
+  margin: 0% auto;
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const BottomWindows = Styled.div`
+  width: 70%;
+  margin: 0% auto;
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const Window = Styled.div`
+  margin: 1% auto;
+`
+
 
 function App() {
   return (
     <div className="App">
 
-      <h1 className="header">Jana Kelsay</h1>
+      <Header className="header">Jana Kelsay</Header>
       
-      <div className="top-windows">
-        <div className="window">
+      <TopWindows>
+        <Window>
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.np2BFmZCfeu1IxZnI1ogjQHaE8%26pid%3DApi&f=1" />
-        </div>
-        <div className="window">
+        </Window>
+        <Window>
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.np2BFmZCfeu1IxZnI1ogjQHaE8%26pid%3DApi&f=1" />
-        </div>
-      </div>
+        </Window>
+      </TopWindows>
 
-      <div className="bottom-windows">
-        <div className="window">
+      <BottomWindows>
+        <Window>
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.np2BFmZCfeu1IxZnI1ogjQHaE8%26pid%3DApi&f=1" />
-        </div>
-        <div className="window">
+        </Window>
+        <Window>
           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.np2BFmZCfeu1IxZnI1ogjQHaE8%26pid%3DApi&f=1" />
-        </div>
-      </div>
-
+        </Window>
+      </BottomWindows>
     </div>
   );
 }
